@@ -1,78 +1,39 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Цитатка</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        body {
-            background-image: url('images/marcus.jpg');
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            font-family: 'Cormorant Garamond', serif;
-            font-style: italic;
-        }
-
-        .quote-container {
-            background-color: rgba(10, 10, 0, 0.4);
-            padding: 3rem;
-            margin: 0 8rem;
-            border-radius: 15px;
-            max-width: 80%;
-            box-shadow: 0 10px 30px rgba(10,10,0,0.5);
-            text-align: center;
-
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        .quote-text {
-            color: rgba(230, 230, 220, 0.95);
-            font-size: 2.0rem;
-            font-weight: bold;
-            line-height: 1.6;
-            margin: 0;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-30px); }
-            15% { opacity: 0; transform: translateY(-30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 768px) {
-            .quote-text {
-                font-size: 1.8rem;
-            }
-            .quote-container {
-                padding: 1.5rem;
-                max-width: 90%;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Denis Gruzdev - Personal Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <main class="quote-container">
-        <blockquote class="quote-text">
-            Не поступай так, словно тебе суждено жить десять тысяч лет.
-            Смерть уже нависла над тобой.
-            Пока ты жив, пока есть возможность - стань достойным.
-        </blockquote>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Denis Gruzdev (aka @codingjerk), a passionate professional developer with over 8 years of experience in various fields of software development.</p>
+            <p>Currently, I'm focusing on Python for backend development. Besides programming, I have a keen interest in drawing and learning new languages, both programming and spoken. My journey in technology is driven by my enthusiasm for learning and creating impactful solutions.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Key Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Bash</li>
+                <li>Linux</li>
+            </ul>
+        </section>
+
+        <section id="resources">
+            <h2>Resources & Contact</h2>
+            <ul>
+                <li><a href="https://github.com/codingjerk">GitHub</a></li>
+                <li><a href="https://t.me/codingjerk">Telegram</a></li>
+                <li><a href="https://github.com/codingjerk/cv/releases/download/v2/cv_denis_gruzdev.pdf" target="_blank">CV (pdf)</a></li>
+                <li><a href="https://www.linkedin.com/in/codingjerk">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/codingjerk">Instagram</a></li>
+                <li><a href="mailto:codingjerk@gmail.com">codingjerk@gmail.com</a></li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
